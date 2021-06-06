@@ -9,9 +9,7 @@ public class Player : MonoBehaviour
     Vector3 forward;
     Vector3 strafe;
     Vector3 vertical;
-    Vector3 velocity;
-    Vector3 direction = Vector3.zero;
-    Vector3 currentVelocity;
+    
 
     [Header ("Movement")]
     public float forwardSpeed = 5f;
@@ -22,8 +20,7 @@ public class Player : MonoBehaviour
     float jumpSpeed;
     public float maxJumpHeight = 2f;
     public float timeToMaxHeight = 0.5f;
-    public float acceleration = 10;
-    public float maxSpeed = 10;
+   
 
     private void Awake()
     {
@@ -43,15 +40,11 @@ public class Player : MonoBehaviour
         float forwardInput = Input.GetAxisRaw("Vertical");
         float strafeInput = Input.GetAxisRaw("Horizontal");
 
-        forward = forwardInput * transform.forward;
-        strafe = strafeInput  * transform.right;
-                
-        direction = (forward + strafe).normalized;
-
-        velocity = Vector3.SmoothDamp(velocity, direction * maxSpeed, ref currentVelocity, maxSpeed / acceleration);
+        forward = forwardInput* forwardSpeed * transform.forward;
+        strafe = strafeInput  * strafeSpeed * transform.right;
 
         vertical += gravity * Time.deltaTime * Vector3.up;
-
+           
         if (controller.isGrounded)
         {
             vertical = Vector3.down;
