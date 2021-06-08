@@ -616,8 +616,8 @@ MonoBehaviour:
   EstaTrancada: 1
   PrecisaDeChave: 1
   PortaNormal: {fileID: 8300000, guid: 1fb698e62bd81d54a97d3bd27a8e0f85, type: 3}
-  PortaTrancada: {fileID: 0}
-  SomDeChave: {fileID: 0}
+  PortaTrancada: {fileID: 8300000, guid: 2ba996d306cd1f14d839e99429a5dea0, type: 3}
+  SomDeChave: {fileID: 8300000, guid: cb12ac61f63401f4ba41f667261bc4c4, type: 3}
   distanciaParaAbrir: 3
   Fonte: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   VelocidadeDeGiro: 50
@@ -5747,7 +5747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!195 &1352860869
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5757,7 +5757,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1352860868}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.68
+  m_Radius: 0.59
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -5783,11 +5783,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2105511170}
-  DistanciaDePercepcao: 10
-  DistanciaDeSeguir: 30
+  DistanciaDePercepcao: 5
+  DistanciaDeSeguir: 10
   DistanciaDeAtacar: 5
   VelocidadeDePasseio: 5
-  VelocidadeDePerseguicao: 5
+  VelocidadeDePerseguicao: 10
   TempoPorAtaque: 1.5
   DanoDoInimigo: 40
   DestinosAleatorios:
@@ -5868,7 +5868,7 @@ Transform:
   m_GameObject: {fileID: 1352860868}
   m_LocalRotation: {x: -0, y: 0.64641076, z: -0, w: 0.76298964}
   m_LocalPosition: {x: 2.872, y: 1.014, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -8186,8 +8186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80821a9e21e493a499c8ad20004db3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 5
-  strafeSpeed: 5
+  forwardSpeed: 10
+  strafeSpeed: 10
   maxJumpHeight: 2
   timeToMaxHeight: 0.5
 --- !u!114 &2105511176
