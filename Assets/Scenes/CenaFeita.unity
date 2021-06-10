@@ -7997,6 +7997,11 @@ PrefabInstance:
       propertyPath: tempoQueVaiRepor
       value: 105
       objectReference: {fileID: 0}
+    - target: {fileID: 5186522652516202066, guid: f0991d5497d646447abb86785a9862d6,
+        type: 3}
+      propertyPath: teclaPegarBateria
+      value: 101
+      objectReference: {fileID: 0}
     - target: {fileID: 5186522652516202067, guid: f0991d5497d646447abb86785a9862d6,
         type: 3}
       propertyPath: m_Name
