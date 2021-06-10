@@ -6,7 +6,7 @@ public class FirstPersonCamera : MonoBehaviour
 {
     public Transform characterBody;
     public Transform characterHead;
-  //  public Transform Lantern;
+   public Transform Lantern;
 
     public float sensitivityX = 0.5f;
     public float sensitivityY = 0.5f;

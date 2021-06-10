@@ -756,6 +756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterBody: {fileID: 1331683877}
   characterHead: {fileID: 192491357}
+  Lantern: {fileID: 0}
   sensitivityX: 0.5
   sensitivityY: 0.5
 --- !u!1 &1008783640
@@ -1143,7 +1144,7 @@ MonoBehaviour:
   imagemBateria: {fileID: 490767526}
   botaoOpcional: {fileID: 1977488689}
   click: {fileID: 8300000, guid: 6497689ddf8285b4ba3fb16c50a3812b, type: 3}
-  tempoTotalBaterias: 50
+  tempoTotalBaterias: 75
   anguloMinimo: 30
   anguloMaximo: 60
   intensidadeMinima: 0.5
